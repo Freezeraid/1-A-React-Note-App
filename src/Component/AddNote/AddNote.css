@@ -6,7 +6,22 @@
     z-index: 2;
     width: 25%;
     background-color: #fffdf5;
-    padding: 2% 3%;
+    padding: 0.5% 1.5%;
+}
+
+#close_AddPanel {
+    color:#f26535; 
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#form_container {
+    padding: 3%;
+}
+
+.displayPanelNone {
+    display: none;
 }
 
 #AddNotePanel h2 {

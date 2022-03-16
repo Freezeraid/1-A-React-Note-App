@@ -9,6 +9,8 @@ const Categorie = ({index, icon, title, description}) => {
             <legend><h3>{icon} {title}</h3></legend>
             <p>{description}</p>
             <Link to={`/Categorie/${index}`}>Voir les notes →</Link>
+            <span title="Delete Categorie">🛇</span>
+            <span title="Edit Categorie">✎</span>
         </fieldset>
     )
 }

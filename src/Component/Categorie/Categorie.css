@@ -5,27 +5,33 @@
     padding: 2%;
     border-radius: 1rem;
     width: 45%;
-    white-space: normal;
     margin: 0 2.5% 5% 2.5%;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
 }
-
 
 .Categorie > legend {
     margin-left: 5%;
     border-radius: 0.5rem;
-    background-color: #fffdf5;
     background-color: #f89a7b;
     padding: 1% 2.5%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .Categorie a {
-    display: block;
-    margin-top: 3%;
+    display: table;
+    margin: 3% 0;
     color:#f89a7b;
     font-style: italic;
 }
 
 .Categorie > legend > h3 {
     color: #fffdf5;
+}
+
+.Categorie > span {
+    float: right;
+    margin: 0 2%;
+    font-size: 1.5rem;
+    cursor: pointer;
 }

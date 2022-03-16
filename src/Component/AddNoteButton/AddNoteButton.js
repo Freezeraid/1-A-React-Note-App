@@ -1,9 +1,9 @@
 import React from "react"
 import "./AddNoteButton.css"
 
-const AddNoteButton = (props) => {
+const AddNoteButton = ({displayAddComponentPanel}) => {
     const openNewNote = () => {
-        console.log("Créez une nouvelle note !")
+        displayAddComponentPanel();
     }
 
     return (

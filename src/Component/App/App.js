@@ -8,11 +8,27 @@ import CategoriePage from '../CategoriePage/CategoriePage';
 import AddNote from '../AddNote/AddNote';
 
 const App = () => {
+    const displayNone = "displayPanelNone";
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState({
+        displayAdd: displayNone, 
+        categories: []
+    });
 
     const updateCategories = categorieData => {
-        setData([...data, categorieData]);
+        let newData = {...data};
+        newData.categories = [...data.categories, categorieData];
+        setData(newData);
+    }
+
+    const displayAddComponentPanel = () => {
+        let newDisplay = "";
+        if(data.displayAdd !== displayNone)
+            newDisplay = displayNone;
+
+        const newData = {...data};
+        newData.displayAdd = newDisplay;
+        setData(newData);
     }
 
     return(
@@ -22,7 +38,7 @@ const App = () => {
             <main>
                 <Routes>
                     <Route path="/" element={
-                        data.map((value, key) => {
+                        data.categories.map((value, key) => {
                             const {icon, title, description} = value;
                             return <Categorie key={key} index={key} icon={icon} title={title} description={description}/>;
                         }) 
@@ -30,8 +46,12 @@ const App = () => {
                     <Route/>
                 </Routes>
             </main>
-            <AddNoteButton/>
-            <AddNote updateCategories={updateCategories}/>
+            <AddNoteButton displayAddComponentPanel={displayAddComponentPanel}/>
+            <AddNote 
+                display={data.displayAdd} 
+                updateCategories={updateCategories} 
+                displayAddComponentPanel={displayAddComponentPanel}
+            />
         </>
     )
 }
