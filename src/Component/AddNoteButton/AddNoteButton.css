@@ -1,0 +1,21 @@
+#AddNoteButton{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #f26535;
+    font-size: 6rem;
+    font-weight: 900;
+    border-radius: 50%;
+    background-color: #fffdf5;
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+    line-height: 0.82;
+}
+
+#AddNoteButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
+}

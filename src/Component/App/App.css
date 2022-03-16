@@ -1,5 +1,7 @@
 main {
     padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .note:not(:last-child) {
@@ -9,4 +11,9 @@ main {
 #App-title{
     text-transform: uppercase;
     font-size: 2.7rem;
+}
+
+h2 {
+    margin: 2% 0;
+    text-align: center;
 }
