@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import "./AddNote.css"
 import {Routes, Route} from "react-router-dom"
 
-export default function AddNote({display, updateCategories, displayAddComponentPanel}) {
+export default function AddNote({display, addCategories, displayAddComponentPanel}) {
     const initialData = {
         display:display,
         icon:"",
@@ -16,7 +16,7 @@ export default function AddNote({display, updateCategories, displayAddComponentP
         e.preventDefault();
         const {icon, title, description} = data;
         let formData = {icon:icon, title:title, description:description}
-        updateCategories(formData);
+        addCategories(formData);
     }
 
     const editFormData = e => {

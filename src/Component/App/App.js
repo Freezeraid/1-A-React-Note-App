@@ -15,9 +15,17 @@ const App = () => {
         categories: []
     });
 
-    const updateCategories = categorieData => {
+    const addCategories = categorieData => {
         let newData = {...data};
         newData.categories = [...data.categories, categorieData];
+        setData(newData);
+        console.log(newData);
+    }
+
+    const deleteCategorie = index => {
+        let newData = {...data};
+        if (newData.categories[index] !== undefined)
+            newData.categories.splice(index, 1);
         setData(newData);
     }
 
@@ -40,7 +48,14 @@ const App = () => {
                     <Route path="/" element={
                         data.categories.map((value, key) => {
                             const {icon, title, description} = value;
-                            return <Categorie key={key} index={key} icon={icon} title={title} description={description}/>;
+                            return (<Categorie 
+                            key={key} 
+                            index={key} 
+                            icon={icon} 
+                            title={title} 
+                            description={description}
+                            deleteCategorie={deleteCategorie}
+                            />);
                         }) 
                     } />
                     <Route/>
@@ -49,7 +64,7 @@ const App = () => {
             <AddNoteButton displayAddComponentPanel={displayAddComponentPanel}/>
             <AddNote 
                 display={data.displayAdd} 
-                updateCategories={updateCategories} 
+                addCategories={addCategories} 
                 displayAddComponentPanel={displayAddComponentPanel}
             />
         </>
