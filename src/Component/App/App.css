@@ -1,0 +1,12 @@
+main {
+    padding: 5% 0;
+}
+
+.note:not(:last-child) {
+    margin-bottom: 5%;
+}
+
+#App-title{
+    text-transform: uppercase;
+    font-size: 2.7rem;
+}
