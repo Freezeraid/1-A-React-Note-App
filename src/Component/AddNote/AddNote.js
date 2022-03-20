@@ -69,7 +69,6 @@ export default function AddNote({display, addCategories, displayAddComponentPane
     }, [noteToEdit]);
 
     const setInitialFormData = (icon, title, description, newData) => {
-        console.log(newData);
         if(icon !== null)
             document.getElementById('icon').value = icon;
         document.getElementById('title').value = title;
