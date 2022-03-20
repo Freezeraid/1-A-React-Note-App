@@ -2,21 +2,18 @@
     position: fixed;
     bottom: 5%;
     right: 5%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 6px 12px;
     color: #f26535;
-    font-size: 6rem;
+    font-size: 8rem;
+    height: 5rem;
+    line-height: 3rem;
     font-weight: 900;
-    border-radius: 50%;
-    background-color: #fffdf5;
-    height: 6rem;
-    width: 6rem;
     text-align: center;
-    line-height: 0.82;
+    transition: text-shadow 0.3s;
 }
 
 #AddNoteButton:hover {
-    box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
-    transition: box-shadow 0.3s;
+    text-shadow: rgba(0, 0, 0, 0.55) 0px 6px 12px;
     cursor: pointer;
 }
 
@@ -24,16 +21,16 @@
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
     #AddNoteButton{
-        font-size: 5rem;
-        height: 5rem;
-        width: 5rem;
+        height: 4.5rem;
+        line-height: 3rem;
+        font-size: 7rem;
     }
 }
 
 @media screen and (max-width: 576px) {
     #AddNoteButton{
-        font-size: 4rem;
-        height: 4rem;
-        width: 4rem;
+        height: 3.5rem;
+        line-height: 2rem;
+        font-size: 6rem;
     }
 }

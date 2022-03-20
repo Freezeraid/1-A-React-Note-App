@@ -7,7 +7,7 @@ const AddNoteButton = ({displayAddComponentPanel}) => {
     }
 
     return (
-        <div id="AddNoteButton" onClick={openNewNote}>+</div>
+        <span id="AddNoteButton" onClick={openNewNote}>+</span>
     )
 }
 
