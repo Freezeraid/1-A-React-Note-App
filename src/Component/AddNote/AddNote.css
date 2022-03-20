@@ -18,6 +18,7 @@
     width: 25%;
     background-color: #fffdf5;
     padding: 0.5% 1.5%;
+    overflow-y: scroll;
 }
 
 #close_AddPanel {
