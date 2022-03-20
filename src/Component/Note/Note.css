@@ -4,7 +4,11 @@
     border-radius: 1rem;
     background-color: #fffdf5;
     width: 70%;
-    margin: auto auto;
+    margin: 0 auto 5% auto;
+}
+
+.note:last-child {
+    margin-bottom: 0;
 }
 
 .note_title {
@@ -24,4 +28,73 @@
     margin: 0 2%;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .note {
+        width: 75%;
+        margin: 0 auto 7% auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .note {
+        padding: 3%;
+        width: 80%;
+        margin: 0 auto 8% auto;
+    }
+
+    .note_title {
+        margin-bottom: 1%;
+    }
+    
+    .note_infos {
+        margin-bottom: 3%;
+    }
+    
+    .note > .iconSpan {
+        margin: 0 3%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .note {
+        padding: 4%;
+        width: 85%;
+        margin: 0 auto 10% auto;
+    }
+
+    .note_title {
+        margin-bottom: 1.5%;
+    }
+    
+    .note_infos {
+        margin-bottom: 4%;
+    }
+    
+    .note > .iconSpan {
+        margin: 0 4%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .note {
+        padding: 5%;
+        width: 90%;
+        margin: 0 auto 12% auto;
+    }
+
+    .note_title {
+        margin-bottom: 2%;
+    }
+    
+    .note_infos {
+        margin-bottom: 5%;
+    }
+    
+    .note > .iconSpan {
+        margin: 0 5%;
+    }
 }

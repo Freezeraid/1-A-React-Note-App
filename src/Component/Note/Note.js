@@ -13,7 +13,7 @@ const Note = ({id, title, date, description, catEditNote, catDeleteNote}) => {
 
     return(
         <article className='note'>
-            <h3 className="note_title">{title}</h3>
+            <h3 className="note_title">#{id+1} {title}</h3>
             <span className="note_infos">{date}</span>
             <p>{description}</p>
             <span className='iconSpan' title="Delete Category" onClick={noteDeleteNote}>🛇</span>

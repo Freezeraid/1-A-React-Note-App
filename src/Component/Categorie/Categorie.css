@@ -35,3 +35,31 @@
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .Categorie {
+        padding: 5%;
+        width: 90%;
+        margin: 0 3% 6% 3%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .Categorie {
+        padding: 3%;
+        width: 90%;
+        margin: 0 4% 7% 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Categorie {
+        padding: 5%;
+        width: 90%;
+        margin: 0 5% 10% 5%;
+    }
+}

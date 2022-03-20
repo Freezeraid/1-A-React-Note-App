@@ -114,7 +114,7 @@ export default function AddNote({display, addCategories, displayAddComponentPane
                         <input name="title" id="title" type="text" maxLength={40} onChange={editFormData} required/>
                         <label htmlFor="description">Description:</label>
                         <textarea name="description" id="description" placeholder='Set the categorie description' maxLength={300} onChange={editFormData} required />
-                        <input type="submit" value="Envoyer" />
+                        <input type="submit" value="Send" />
                     </form>
                 </div>
             </aside>

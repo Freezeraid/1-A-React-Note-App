@@ -17,7 +17,7 @@ const Categorie = ({index, icon, title, description, deleteCategorie, editCatego
         <fieldset className="Categorie">
             <legend><h3>{icon} {title}</h3></legend>
             <p>{description}</p>
-            <Link to={`/Category/${index}`} state={{ title:`${icon} ${title}` }}>Voir les notes →</Link>
+            <Link to={`/Category/${index}`} state={{ title:`${icon} ${title}` }}>Watch all notes →</Link>
             <span title="Delete Category" onClick={removeCategorie}>🛇</span>
             <span title="Edit Category" onClick={changeCategorie}>✎</span>
         </fieldset>

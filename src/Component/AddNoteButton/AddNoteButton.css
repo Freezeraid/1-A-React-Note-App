@@ -19,3 +19,21 @@
     transition: box-shadow 0.3s;
     cursor: pointer;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    #AddNoteButton{
+        font-size: 5rem;
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #AddNoteButton{
+        font-size: 4rem;
+        height: 4rem;
+        width: 4rem;
+    }
+}

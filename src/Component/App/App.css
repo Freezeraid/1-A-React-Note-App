@@ -4,10 +4,6 @@ main {
     flex-wrap: wrap;
 }
 
-.note:not(:last-child) {
-    margin-bottom: 5%;
-}
-
 #App-title{
     text-transform: uppercase;
     font-size: 2.7rem;
@@ -18,4 +14,38 @@ h2 {
     width: 100%;
     margin: 2% 0%;
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    h2 {
+        margin: 7% 0%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    h2 {
+        margin: 9% 0%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #App-title{
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        margin: 12% 0%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #App-title{
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        margin: 15% 0%;
+    }
 }

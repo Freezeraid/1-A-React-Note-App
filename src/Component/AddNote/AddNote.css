@@ -78,3 +78,31 @@
     background-color:#f26535;
     border: 0;
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    #AddNotePanel {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    #AddNotePanel {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #AddNotePanel {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #AddNotePanel {
+        width: 80%;
+    }
+}
