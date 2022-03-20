@@ -4,6 +4,7 @@ import "./Categorie.css";
 import {Link} from "react-router-dom"
 
 const Categorie = ({index, icon, title, description, deleteCategorie, editCategories}) => {
+
     const removeCategorie = () => {
         deleteCategorie(index);
     }
